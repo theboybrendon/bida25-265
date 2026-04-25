@@ -3,16 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="All official links for YoungPapi." />
+    <meta name="description" content="Official links — stream, follow, and stay updated." />
+    <meta name="author" content="YoungPapi" />
     <title>Links | YoungPapi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
     <header class="header">
       <div class="container nav">
         <a class="brand" href="index.html">Young<span>Papi</span></a>
-        <button class="menu-btn" data-menu-btn aria-label="Toggle menu">Menu</button>
-        <ul class="nav-links" data-nav-links>
+        <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+          Menu
+        </button>
+        <ul class="nav-links" id="site-nav" data-nav-links>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="music.html">Music</a></li>
@@ -23,44 +33,47 @@
       </div>
     </header>
 
-    <main class="section">
+    <main id="main" class="section">
       <div class="container">
-        <h2>Official Links</h2>
-        <p class="lead">
-          Use these direct links to follow YoungPapi's journey and stay updated on
-          upcoming content, releases, and announcements.
-        </p>
+        <header class="page-head">
+          <p class="eyebrow">Everywhere</p>
+          <h1>Links</h1>
+          <p class="lead">
+            One tap away from the whole map, plug in real URLs when each profile is locked and
+            ready for traffic.
+          </p>
+        </header>
         <div class="grid-3">
-          <a class="card" href="#" aria-label="Spotify profile">
-            <h3>Spotify</h3>
-            <p>Future releases will appear here once officially launched.</p>
+          <a class="card" href="#" aria-label="Spotify profile (link pending)">
+            <h2>Spotify</h2>
+            <p>Releases will land here first once the catalog is public.</p>
           </a>
-          <a class="card" href="#" aria-label="Apple Music profile">
-            <h3>Apple Music</h3>
-            <p>Follow for upcoming songs and catalog updates.</p>
+          <a class="card" href="#" aria-label="Apple Music profile (link pending)">
+            <h2>Apple Music</h2>
+            <p>Same music, different app for listeners on that side.</p>
           </a>
-          <a class="card" href="#" aria-label="YouTube channel">
-            <h3>YouTube</h3>
-            <p>Watch official videos and behind-the-scenes clips.</p>
+          <a class="card" href="#" aria-label="YouTube channel (link pending)">
+            <h2>YouTube</h2>
+            <p>Official videos, freestyles, and behind-the-scenes.</p>
           </a>
-          <a class="card" href="#" aria-label="Instagram profile">
-            <h3>Instagram</h3>
-            <p>Daily visuals, stories, and short promos.</p>
+          <a class="card" href="#" aria-label="Instagram profile (link pending)">
+            <h2>Instagram</h2>
+            <p>Day-to-day visuals, drops, and story energy.</p>
           </a>
-          <a class="card" href="#" aria-label="TikTok profile">
-            <h3>TikTok</h3>
-            <p>Performance snippets and creative trends.</p>
+          <a class="card" href="#" aria-label="TikTok profile (link pending)">
+            <h2>TikTok</h2>
+            <p>Short clips, trends, and raw moments from sessions.</p>
           </a>
-          <a class="card" href="#" aria-label="X social profile">
-            <h3>X (Twitter)</h3>
-            <p>Announcements, release dates, and fan updates.</p>
+          <a class="card" href="#" aria-label="X profile (link pending)">
+            <h2>X</h2>
+            <p>Quick updates, dates, and thoughts between releases.</p>
           </a>
         </div>
       </div>
     </main>
 
     <footer class="footer">
-      <div class="container">Copyright <span data-year></span> YoungPapi</div>
+      <div class="container">© <span data-year></span> YoungPapi</div>
     </footer>
     <script src="script.js"></script>
   </body>

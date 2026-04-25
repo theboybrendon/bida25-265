@@ -3,16 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Contact YoungPapi for bookings and collaborations." />
+    <meta name="description" content="Contact YoungPapi for bookings, press, and collaborations." />
+    <meta name="author" content="YoungPapi" />
     <title>Contact | YoungPapi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
     <header class="header">
       <div class="container nav">
         <a class="brand" href="index.html">Young<span>Papi</span></a>
-        <button class="menu-btn" data-menu-btn aria-label="Toggle menu">Menu</button>
-        <ul class="nav-links" data-nav-links>
+        <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+          Menu
+        </button>
+        <ul class="nav-links" id="site-nav" data-nav-links>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="music.html">Music</a></li>
@@ -23,44 +33,46 @@
       </div>
     </header>
 
-    <main class="section">
+    <main id="main" class="section">
       <div class="container">
-        <h2>Contact</h2>
-        <p class="lead">
-          Send booking requests, collaboration ideas, or media inquiries using the
-          form below.
-        </p>
+        <header class="page-head">
+          <p class="eyebrow">Line open</p>
+          <h1>Contact</h1>
+          <p class="lead">
+            Shows, features, press, or just real talk, send a message and a form service when you go live.
+          </p>
+        </header>
 
         <div class="contact-wrap">
           <form data-contact-form>
             <div class="field">
-              <label for="name">Full Name</label>
-              <input id="name" type="text" required />
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required />
             </div>
             <div class="field">
               <label for="email">Email</label>
-              <input id="email" type="email" required />
+              <input id="email" name="email" type="email" autocomplete="email" required />
             </div>
             <div class="field">
               <label for="subject">Subject</label>
-              <input id="subject" type="text" required />
+              <input id="subject" name="subject" type="text" required />
             </div>
             <div class="field">
               <label for="message">Message</label>
-              <textarea id="message" required></textarea>
+              <textarea id="message" name="message" required></textarea>
             </div>
-            <button class="btn btn-primary" type="submit">Send Message</button>
+            <button class="btn btn-primary" type="submit">Send message</button>
             <p class="notice" data-form-notice></p>
           </form>
 
           <aside class="socials">
-            <h3>Direct Details</h3>
+            <h2>Direct</h2>
             <ul>
-              <li>Email: booking@youngpapi.com</li>
-              <li>Phone: +267 71 000 000</li>
+              <li>Email: youngpapi@icloud.com</li>
+              <li>Phone: +267 78 513 153</li>
               <li>Location: Gaborone, Botswana</li>
             </ul>
-            <h3 style="margin-top: 1rem">Follow</h3>
+            <h2>Follow</h2>
             <ul>
               <li><a href="#">Instagram</a></li>
               <li><a href="#">TikTok</a></li>
@@ -73,7 +85,7 @@
     </main>
 
     <footer class="footer">
-      <div class="container">Copyright <span data-year></span> YoungPapi</div>
+      <div class="container">© <span data-year></span> YoungPapi</div>
     </footer>
     <script src="script.js"></script>
   </body>

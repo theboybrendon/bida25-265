@@ -3,16 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="About YoungPapi, an emerging hip-hop artist inspired by Drake and A-Reece." />
+    <meta name="description" content="About YoungPapi — influences, vision, and the path behind the music." />
+    <meta name="author" content="YoungPapi" />
     <title>About | YoungPapi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
     <header class="header">
       <div class="container nav">
         <a class="brand" href="index.html">Young<span>Papi</span></a>
-        <button class="menu-btn" data-menu-btn aria-label="Toggle menu">Menu</button>
-        <ul class="nav-links" data-nav-links>
+        <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+          Menu
+        </button>
+        <ul class="nav-links" id="site-nav" data-nav-links>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="music.html">Music</a></li>
@@ -23,47 +33,53 @@
       </div>
     </header>
 
-    <main class="section">
+    <main id="main" class="section">
       <div class="container">
-        <h2>About YoungPapi</h2>
-        <p class="lead">
-          YoungPapi is an emerging hip-hop artist inspired by Drake and A-Reece,
-          focused on storytelling, emotion, and modern rap sound.
-        </p>
+        <header class="page-head">
+          <p class="eyebrow">The File</p>
+          <h1>About</h1>
+          <p class="lead">
+           YoungPapi is a young emerging rap artist from Botswana with a passion for music and a dream to make a name for himself,
+           crafting a sound that blends raw bars with cinematic production. Drawing inspiration from Drake's melodic versatility and
+           A-Reece's introspective lyricism, YoungPapi is carving out a lane that blends both worlds, emotional depth with street credibility.
+           This portfolio marks the beginning of a journey. The music is in development. The brand is being built. The moment is coming.
+          </p>
+        </header>
         <div class="grid-3">
           <article class="card">
-            <h3>Artist Bio</h3>
+            <h2>Bio</h2>
             <p>
-              YoungPapi is currently building a professional digital identity before
-              his first official release, with a focus on authenticity and growth.
+              YoungPapi is building a real digital home before the first official release honest
+              storytelling, late nights, and a sound that sits between melody and bars.
             </p>
           </article>
           <article class="card">
-            <h3>Influences</h3>
+            <h2>Influences</h2>
             <p>
-              His creative direction blends melodic rap, trap soul elements, and
-              storytelling influenced by contemporary African and global hip-hop.
+              From Drake’s pocket to A-Reece’s pen, global hooks, African cadence, and the hunger
+              of someone still proving it to themselves first.
             </p>
           </article>
           <article class="card">
-            <h3>Brand Vision</h3>
+            <h2>Vision</h2>
             <p>
               The mission is to build early brand awareness, connect with new
-              listeners, and scale into future releases and live opportunities.
+              listeners, and then let the music do the talking when
+              the rollout is ready not a second before.
             </p>
           </article>
         </div>
 
         <ul class="list">
-          <li>Building an online presence across mobile-first digital platforms.</li>
-          <li>Creating a foundation for future singles, videos, and announcements.</li>
-          <li>Collaborating with producers, creatives, and potential industry partners.</li>
+          <li>Mobile-first site structure so fans and industry can move through the story fast.</li>
+          <li>Room for future singles, videos, and press without redesigning the whole layout.</li>
+          <li>Open lane for producers, creatives, and partners who want to build something serious.</li>
         </ul>
       </div>
     </main>
 
     <footer class="footer">
-      <div class="container">Copyright <span data-year></span> YoungPapi</div>
+      <div class="container">© <span data-year></span> YoungPapi</div>
     </footer>
     <script src="script.js"></script>
   </body>

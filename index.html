@@ -5,17 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="YoungPapi emerging rap artist portfolio website showcasing new music, visuals, and booking details."
+      content="YoungPapi — emerging rap artist from Botswana. Portfolio website showcasing new music, visuals, and booking details."
     />
+    <meta name="author" content="YoungPapi" />
     <title>YoungPapi | Artist Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
     <header class="header">
       <div class="container nav">
         <a class="brand" href="index.html">Young<span>Papi</span></a>
-        <button class="menu-btn" data-menu-btn aria-label="Toggle menu">Menu</button>
-        <ul class="nav-links" data-nav-links>
+        <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+          Menu
+        </button>
+        <ul class="nav-links" id="site-nav" data-nav-links>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="music.html">Music</a></li>
@@ -26,50 +36,78 @@
       </div>
     </header>
 
-    <main>
-      <section class="hero">
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-heading">
         <div class="container hero-grid">
           <div>
-            <h1>YoungPapi: An Emerging Hip-Hop Artist</h1>
-            <p>
-              Welcome to the official portfolio website of YoungPapi, an upcoming
-              rap artist inspired by Drake and A-Reece. This platform introduces
-              his brand identity, personality, and creative direction.
+            <p class="eyebrow">Emerging Hip-hop Artist</p>
+            <h1 id="hero-heading">
+              Still writing like
+              <span class="line-accent">the world is watching</span>
+            </h1>
+            <p class="tagline">
+              Twenty, hungry and building bar by bar. This site is my lane, my story, my sound, and
+              where the work lives until the speakers catch up. 
             </p>
+            <dl class="meta-row">
+              <div>
+                <dt>Based</dt>
+                <dd>Gaborone, BW</dd>
+              </div>
+              <div>
+                <dt>Focus</dt>
+                <dd>Rap / Melodic</dd>
+              </div>
+              <div>
+                <dt>Energy</dt>
+                <dd>Studio-first</dd>
+              </div>
+            </dl>
             <div class="button-row">
               <a class="btn btn-primary" href="about.html">Explore the Artist</a>
               <a class="btn btn-secondary" href="contact.html">Connect Now</a>
             </div>
           </div>
-          <article class="hero-card">
-            <img
-              src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=800&q=80"
-              alt="Artist performing on stage with dramatic lights"
-            />
+          <article class="hero-card" aria-label="Featured portrait area">
+            <div class="hero-card__inner">
+              <div class="hero-shot-slot">
+                <!-- YOUR HERO PHOTO: place <img> here so it stacks on top of the placeholder (same folder tip: images/hero.jpg).
+                Example:
+                <img class="hero-shot" src="images/hero.jpg" alt="YoungPapi" width="900" height="1200" />
+                -->
+                <div class="hero-shot-slot__noise"></div>
+                <div class="hero-shot-slot__mark">
+                  <span class="hero-shot-slot__initials">YP</span>
+                  <span class="hero-shot-slot__hint">Drop your portrait here</span>
+                </div>
+              </div>
+            </div>
           </article>
         </div>
       </section>
 
-      <section class="section">
+      <section class="section" aria-labelledby="objectives-heading">
         <div class="container">
-          <h2>Website Objectives</h2>
-          <p class="lead">
-            This website is built to establish a strong online presence, support
-            fanbase growth, and create a scalable platform for future releases,
-            videos, announcements, and collaboration opportunities.
-          </p>
+          <header class="section-head">
+            <p class="eyebrow">Why this site</p>
+            <h2 id="objectives-heading">Built for the long run</h2>
+            <p class="lead">
+              One clean home for the name, so when the music hits, the visuals hit, and the
+              bookings come, everything already lives in one place.
+            </p>
+          </header>
           <div class="grid-3">
             <article class="card">
-              <h3>Brand Identity</h3>
-              <p>Discover YoungPapi's story, style, influences, and artistic vision.</p>
+              <h3>Identity</h3>
+              <p>Who I am on the mic, what I stand for, and the lane I am carving before the first official roll-out.</p>
             </article>
             <article class="card">
               <h3>Future Music Hub</h3>
-              <p>Follow updates on upcoming releases and projects now in development.</p>
+              <p>Stay updated on upcoming releases, projects in development, and announcements dropping before anyone else hears them.</p>
             </article>
             <article class="card">
-              <h3>Fan and Industry Access</h3>
-              <p>Connect for collaborations, opportunities, and early audience growth.</p>
+              <h3>Fan And Industry Access</h3>
+              <p>A direct line for collaborations, bookings, opportunities, and connecting with a growing audience from the ground up.</p>
             </article>
           </div>
         </div>
@@ -77,7 +115,7 @@
     </main>
 
     <footer class="footer">
-      <div class="container">Copyright <span data-year></span> YoungPapi</div>
+      <div class="container">© <span data-year></span> YoungPapi</div>
     </footer>
     <script src="script.js"></script>
   </body>

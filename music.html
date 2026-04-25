@@ -3,16 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Music releases and upcoming projects by YoungPapi." />
+    <meta name="description" content="Music roadmap and upcoming releases by YoungPapi." />
+    <meta name="author" content="YoungPapi" />
     <title>Music | YoungPapi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
     <header class="header">
       <div class="container nav">
         <a class="brand" href="index.html">Young<span>Papi</span></a>
-        <button class="menu-btn" data-menu-btn aria-label="Toggle menu">Menu</button>
-        <ul class="nav-links" data-nav-links>
+        <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+          Menu
+        </button>
+        <ul class="nav-links" id="site-nav" data-nav-links>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="music.html">Music</a></li>
@@ -23,42 +33,45 @@
       </div>
     </header>
 
-    <main class="section">
+    <main id="main" class="section">
       <div class="container">
-        <h2>Music Roadmap</h2>
-        <p class="lead">
-          YoungPapi has not released official music yet. This page shares progress
-          updates on tracks and upcoming projects in development.
-        </p>
+        <header class="page-head">
+          <p class="eyebrow">Catalog</p>
+          <h1>Music</h1>
+          <p class="lead">
+            Nothing public yet on purpose. The page shares progress updates,
+            first singles getting mixed until they feel undeniable.
+          </p>
+        </header>
 
         <div class="music-list">
           <article class="track">
             <div>
-              <h3>Debut Single (Title TBA)</h3>
-              <p>Planned Release - 2026</p>
+              <h2>Debut Single</h2>
+              <p>Fed By the Struggle · Target 2026</p>
             </div>
-            <span class="pill">In Production</span>
+            <span class="pill pill--amber">In Session</span>
           </article>
           <article class="track">
             <div>
-              <h3>Second Single (Title TBA)</h3>
-              <p>Concept and Writing Phase</p>
+              <h2>Second Hit</h2>
+              <p>Title TBA / reference cuts</p>
             </div>
             <span class="pill">Coming Soon</span>
           </article>
           <article class="track">
             <div>
-              <h3>Future Project</h3>
-              <p>EP Direction and Sound Development</p>
+              <h2>Long play</h2>
+              <p>EP direction &amp; sound map</p>
             </div>
-            <span class="pill">Planned</span>
+            <span class="pill pill--muted">Planned</span>
           </article>
         </div>
       </div>
     </main>
 
     <footer class="footer">
-      <div class="container">Copyright <span data-year></span> YoungPapi</div>
+      <div class="container">© <span data-year></span> YoungPapi</div>
     </footer>
     <script src="script.js"></script>
   </body>
